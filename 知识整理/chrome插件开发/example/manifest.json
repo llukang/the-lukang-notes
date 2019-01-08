@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ExtentionDemo",
+  "description": "chrome extention Demo",
+  "version": "1",
+  "author": "lukang.liu",
+  "browser_action": {
+    "default_icon": "images/icon-1.png",
+    "default_title": "chrome extention Demo",
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

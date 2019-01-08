@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>发布—订阅模式</title>
+</head>
+
+<body>
+  <h3>模块间的通信</h3>
+  <button id="count">点我</button>
+  <div id="show"></div>
+  <script>
+    // 观察者模式 通用模式
+
+    const Event = {
+      clientList: {},
+      listen: function (key, fn) {
+        if (!this.clientList[key]) {
+          this.clientList[key] = [];
+        }
+        this.clientList[key].push(fn);
+      },
+      remove: function (key, fn) {
+        const fns = this.clientList[key];
+        // 没有指定类型 直接返回
+        if (!fns) {
+          return false;
+        }
+        // 没有具体函数，清空所以指定类型绑定事件
+        if (!fn) {
+          fns && (fns.length = 0);
+        }
+        //存在具体函数 反向遍历订阅的回调函数列表
+        if (fn) {
+          for (let l = fns.length - 1; l >= 0; l--) {
+            var _fn = fns[l];
+            if (_fn === fn) {
+              fns.splice(l, 1); // 删除订阅者的回调函数
+            }
+          }
+        }
+      },
+      trigger: function () {
+        const key = Array.prototype.shift.call(arguments);
+        const fns = this.clientList[key] || [];
+
+        for (let i = 0, fn; fn = fns[i++];) {
+          fn.apply(this, arguments);
+        }
+      }
+    };
+
+    // 模块间的通信
+    var a = (function () {
+      var count = 0;
+      var button = document.getElementById('count');
+      button.onclick = function () {
+        Event.trigger('add', count++);
+      }
+    })();
+    var b = (function () {
+      var div = document.getElementById('show');
+      Event.listen('add', function (count) {
+        div.innerHTML = count;
+      });
+    })();
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>装饰者模式</title>
+</head>
+
+<body>
+  <h3>用AOP动态改变函数的参数</h3>
+  <p>请求发送前先添加token参数</p>
+  <script>
+    var before = function (fn, beforefn) {
+      var __self = this;
+      return function () {
+        beforefn.apply(this, arguments);
+        return fn.apply(this, arguments);
+      }
+    }
+
+    var ajax = function (type, url, param) {
+      console.log(type, url, param); // 发送 ajax 请求的代码略
+    };
+
+    var getToken = function (type, url, param) {
+      param.token = 'Token';
+    }
+
+    ajax = before(ajax, getToken);
+
+    ajax('get', 'http:// xxx.com/userinfo', {
+      name: 'sven'
+    });
+
+  </script>
+</body>
+
+</html>

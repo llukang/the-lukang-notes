@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>compose</title>
+</head>
+
+<body>
+<h3>函数的合成</h3>
+<script>
+	// compose的参数是函数，返回的也是一个函数
+	// 因为除了第一个函数的接受参数，其他函数的接受参数都是上一个函数的返回值，
+	// 所以初始函数的参数是多元的，而其他函数的接受值是一元的
+	// 执行方向自左向右(一般从右向左)
+	// 但是从右向左执行更加能够反映数学上的含义——是的，组合的概念直接来自于数学课本
+	// var fn = (func1, func2) => (...args) => func2.call(this, func1.apply(this, args))
+	// compose模式 可用场景
+	// 表单的校验=>减少if else 面条式编程
+
+	// lodash.js 实现
+  // 核心思想是遍历数组，依次执行
+
+	const flow = (funcs) => {
+		const length = funcs.length;
+		let index = length;
+
+		// 检查函数合法性
+		while (index--) {
+			if (typeof funcs[index] !== 'function') {
+				throw new TypeError('Expected a function');
+			}
+		}
+
+		return function (...args) {
+			// 决定从左向右
+			let index = 0;
+			// 第一个函数接受真正的参数，后面的接受返回值;
+			let result = length ? funcs[index].apply(this, args) : args[0];
+			// 依次遍历
+			while (++index < length) {
+				result = funcs[index].call(this, result);
+			}
+
+			return result;
+		}
+	};
+
+	const greeting = (firstName, lastName) => {
+		return firstName + lastName;
+	};
+	const toUpper = (str) => {
+		return str.toUpperCase();
+	};
+	const trim = (str) => {
+		return str + ' + trim';
+	};
+
+	const flowResult = flow([greeting, trim, toUpper])('jack', 'smith');
+	console.log('loadsh.js :' + flowResult); // JACK SMITH
+
+
+	/*--------------------------------------------------------------------------------------------*/
+
+	// ramda.js 实现
+	//核心思想是使用数组reduce方法遍历
+
+	const reverse = arr => arr.reverse();
+	const _pipe = (f, g) => (...args) => g.call(this, f.apply(this, args));
+	const compose = (...args) => reverse(args).reduce(_pipe, args.shift());
+
+	const ramdaResult = compose(toUpper, trim, greeting)('jack2', 'smith2');
+	console.log('ramda.js :' + ramdaResult);
+
+</script>
+</body>
+
+</html>

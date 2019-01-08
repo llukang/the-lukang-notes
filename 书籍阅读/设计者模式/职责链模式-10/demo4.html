@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>职责链</title>
+</head>
+
+<body>
+  <h3>使用AOP实现职责链</h3>
+  <script>
+    Function.prototype.after = function (fn) {
+      var self = this;
+      return function () {
+        var ret = self.apply(this, arguments);
+        if (ret === 'nextSuccessor') {
+          return fn.apply(this, arguments);
+        }
+        return ret;
+      }
+    };
+    var order = order500yuan.after(order200yuan).after(orderNormal);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "myplans",
+  "version": "1.1.0",
+  "description": "笔记,资料，简历",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:liulukang/MyPlans.git"
+  },
+  "author": "lukang.liu",
+  "license": "ISC",
+  "devDependencies": {
+    "standard-version": "^4.4.0"
+  }
+}

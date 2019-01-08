@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<script>
+	const IO = function (f) {
+		this.__value = f;
+	};
+
+	IO.of = function (x) {
+		return new IO(function () {
+			return x;
+		});
+	};
+
+	IO.prototype.map = function (f) {
+		return new IO(_.compose(f, this.__value));
+	};
+
+
+	//  io_window_ :: IO Window
+	const io_window = new IO(function () {
+		return window;
+	});
+
+	io_window.map(function (win) {
+		return win.innerWidth
+	});
+	// IO(1430)
+
+	io_window.map(_.prop('location')).map(_.prop('href')).map(split('/'));
+	// IO(["http:", "", "localhost:8000", "blog", "posts"]);
+
+
+	//  $ :: String -> IO [DOM]
+	const $ = function(selector) {
+		return new IO(function(){ return document.querySelectorAll(selector); });
+	};
+
+	$('#myDiv').map(head).map(function(div){ return div.innerHTML; });
+	// IO('I am some inner html');
+
+
+
+</script>
+</body>
+</html>
