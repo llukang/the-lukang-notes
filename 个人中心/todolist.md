@@ -2,35 +2,34 @@
 
 #### 待办事宜
 
-- 整理 postCss 工具
+- 整理 postcss 工具
 - 整理 svg 图像
 - 整理 canvas 图像
-- 整理 IndexedDB 图像
+- 整理 indexeddb 数据存储 
 - 整理 changelog 工具使用 
 - 学习  [jest 单元测试](http://www.aliued.com/?p=4095)
 - `react-so-cool` 项目完善
 - 书籍阅读整理
 - 购买服务器，备案，建站
-- react,eletron
-- 微信小程序，微信公众号
+- react、eletron
+- 微信小程序
+- 微信公众号
+- 梳理 vue 技术栈
 
 #### 2019-01
+- [完成 webpack 多页面打包构建项目](https://github.com/oh-oh-oh/multiple-page-boilerplate)
+- [indexeddb入门](http://www.ruanyifeng.com/blog/2018/07/indexeddb.html)
+- 微信小程序 项目结构初步了解
 - 初步完成 react 快捷开发脚手架 
 
 #### 2018-12 
 - 了解 changelog 自动生成工具(standard-version)
 - 了解 命令式提交工具  (commitizen )
-- 了解 文件和二进制数据的操作
-  - [参考1 ](http://javascript.ruanyifeng.com/htmlapi/file.html)
-- 了解  Web Components
-  - [参考1 ](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html)
-- 了解  Web Components
-  - [参考1 ](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html)
-- 学习 svg 基础语法
-  -  [参考1](http://javascript.ruanyifeng.com/htmlapi/svg.html)
-- 学习 node debug && vscode debug
-  - [参考1](http://www.ruanyifeng.com/blog/2018/03/node-debugger.html)
-  - [参考2](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+- [了解 文件和二进制数据的操作](http://javascript.ruanyifeng.com/htmlapi/file.html)
+- [了解  Web Components](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html)
+- [学习 svg 基础语法](http://javascript.ruanyifeng.com/htmlapi/svg.html)
+- [学习 node debug](http://www.ruanyifeng.com/blog/2018/03/node-debugger.html)
+- [学习 vscode debug](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 
 #### 2018-11
 
