@@ -2,25 +2,26 @@
 
 #### 待办事宜
 
-- 整理 postcss 工具
-- 整理 svg 图像
-- 整理 canvas 图像
-- 整理 indexeddb 数据存储 
-- 整理 changelog 工具使用 
 - 学习  [jest 单元测试](http://www.aliued.com/?p=4095)
+- react 项目使用 typescript
 - `react-so-cool` 项目完善
+- 梳理 微信公众号
+- 梳理 eletron 技术栈
+- 梳理 微信小程序
+- 梳理 vue 技术栈
 - 书籍阅读整理
 - 购买服务器，备案，建站
-- react、eletron
-- 微信小程序
-- 微信公众号
-- 梳理 vue 技术栈
+
+#### 2019-02
 
 #### 2019-01
+
+- 了解 postcss 工具
 - [完成 webpack 多页面打包构建项目](https://github.com/oh-oh-oh/multiple-page-boilerplate)
 - [indexeddb入门](http://www.ruanyifeng.com/blog/2018/07/indexeddb.html)
 - 微信小程序 项目结构初步了解
 - 初步完成 react 快捷开发脚手架 
+
 
 #### 2018-12 
 - 了解 changelog 自动生成工具(standard-version)
