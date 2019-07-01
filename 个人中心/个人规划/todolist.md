@@ -3,16 +3,21 @@
 #### 待办事宜
 
 - 学习  [jest 单元测试](http://www.aliued.com/?p=4095)
-- react 项目使用 typescript
 - `react-so-cool` 项目完善
 - 梳理 微信公众号
 - 梳理 eletron 技术栈
-- 梳理 微信小程序
 - 梳理 vue 技术栈
 - 书籍阅读整理
 - 购买服务器，备案，建站
+- 算法 letcodes
 
-#### 2019-02
+#### 2019-05
+
+- react 项目使用 typescript
+
+#### 2019-04
+
+- 梳理 微信小程序
 
 #### 2019-01
 
