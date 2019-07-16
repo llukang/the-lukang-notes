@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>单例模式</title>
+  <style>
+    #dialog {}
+  </style>
+</head>
+
+<body>
+  <h3>惰性单例</h3>
+
+  <button id="js_open_dialog">打开弹框</button>
+  <script>
+    const creatDialog = function (text) {
+      const dialog = document.createElement('div');
+      dialog.id = 'dialog';
+      dialog.innerHTML = text;
+      document.body.appendChild(dialog);
+      return dialog;
+    };
+
+    const sigleMode = function (fn) {
+      let singleFlag;
+      return function (...args) {
+        return singleFlag || (singleFlag = fn.apply(this, args));
+      };
+    };
+
+    const dialogObj = sigleMode(creatDialog);
+
+    document.querySelector('#js_open_dialog').onclick = function () {
+      const dialogDom = dialogObj('我是登录浮窗');
+    };
+    
+  </script>
+</body>
+
+</html>

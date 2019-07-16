@@ -106,12 +106,19 @@ npm install --save-dev @commitlint/config-conventional @commitlint/cli husky
 # 配置 commitlint.config.js
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 
-# 配置 package.json`
+# 配置 package.json
  "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
+
+# 或 配置 .huskyrc
+{
+  "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+}
 
 # 使用
 git commit -m "不符合规范提交"

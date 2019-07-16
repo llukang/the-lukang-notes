@@ -11,12 +11,12 @@
   # 关闭与 prettier 冲突的规则
   npm install eslint-config-prettier --save-dev
 
-
-
 ```
+
+### 提交校验
+
 
 ### 使用
 
-- 查看镜像列表
 
 ### 其他
