@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>container</title>
+</head>
+<body>
+<h3>容器（container）</h3>
+
+<script>
+	//functor 是实现了 map 函数并遵守一些特定规则的容器类型。
+
+	// (a->b)  ==> container m
+	const Container = function (x) {
+		this.__value = x;
+	};
+
+	Container.of = function (x) {
+		return new Container(x);
+	};
+
+	// 实现了 在不离开 Container 的情况下操作容器里面的值 更新里面的值
+	Container.prototype.map = function (f) {
+		return Container.of(f(this.__value))
+	};
+
+	// container m ==> container f
+	// Container(2) => Container(4)
+	Container.of(2).map(function (two) {
+		return two + 2
+	});
+
+	Container.of("flamethrowers").map(function (s) {
+		return s.toUpperCase()
+	})
+	//=> Container("FLAMETHROWERS")
+
+</script>
+</body>
+</html>
