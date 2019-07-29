@@ -61,17 +61,17 @@
 
 ![图片](./images/issue-templates.png)
 
-3. `release` 分支保护
+3. `master release` 分支保护
 
 ![图片](./images/protected-branch.png)
 
-4. 代码同步问题
+4. 代码分支问题
 
-管理员 负责 `master` 分支合并权限，在其他需求或者紧急修复时，应当及时同步到其他迭代分支 (`release`) 分支
+管理员 负责 `master release` 分支合并权限，在其他需求或者紧急修复时，应当及时同步到其他迭代分支 (`release`) 分支
 
 开发者 提交 `merge request` 前，需要同步`release` 分支代码，解决相应冲突，确保管理员能直接 `merge`
 
-5. 拉取代码方式
+5. 代码同步方式
 
 推荐使用 `rebase` 方式，不强制，有风险，可能丢失提交纪录
 
@@ -91,7 +91,7 @@ git push -f
 
 ![图片](./images/rebase.png)
 
-### 快捷简版流程（目的 review code）
+### 快捷简版流程（目的 code review）
 
 1. 从 `master` 创建 `release-*` 迭代分支
 2. 从 `release-*` 创建 `feature-*` 个人开发分支
