@@ -1,65 +1,86 @@
-# 学习清单
+# 待办事宜
 
-### react技术栈
+## 待办事宜
 
-- react相关api --done
-- redux 源码 --done
-- redux-redux 源码 --done
-- react-router 源码 --done
-- history 源码 --done
-- dva 源码 --done
-- react 底层实现
-- umi 源码
+- 梳理 微信公众号
+- 梳理 eletron 技术栈
+- 梳理 vue 技术栈
+- 购买服务器，备案，建站
+- 算法 letcodes
+- 整理 editorconfig
+- 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
 
-### 模拟接口mock 
-- 熟练使用 --done
-- 实现自己的`mock`工具 --done
+## 日志记录
 
-### 代码检测eslint 
-- 熟练使用 --done
-- 自定义配置 --done
+### 2019-07
 
-### 移动端 
-- 微信小程序 taro  --done
-- webapp淘宝H5适配 --done
+- 整理 gitlab PR 流程
+- 整理 Code Review 规范
+- 整理 git submodel 使用
 
-### vue技术栈 
-- 构建开发后台管理系统 --done
+### 2019-06
 
-### 函数式编程
-- 初步了解 --done
+- 整理 dns 解析
+- 整理 网络分层
+- 整理 nrm 使用
+- 新增书单
 
-### js设计模式
-- 了解常用的多种设计模式 --done
-- 使用设计模式重构相关功能
+### 2019-05
 
-### 私有工具组件库
-- `react` 常用组件 --done
-- `http` 封装 --done
-- `dva module` 扩展 --done
+- react 项目使用 typescript
 
-### react-native学习
-- 配置react-native 运行环境 --done
-- 熟悉react-native 自带组件 --done
-- 继续深入`react-native`学习
-- 学习`react-navigation`
+### 2019-04
 
-### electron学习
-- 待定
+- 梳理 微信小程序
 
-### 深入webpack
-- 待定
+### 2019-01
 
-### 单元测试
-- 待定
+- 了解 postcss 工具
+- [完成 webpack 多页面打包构建项目](https://github.com/oh-oh-oh/multiple-page-boilerplate)
+- [indexeddb 入门](http://www.ruanyifeng.com/blog/2018/07/indexeddb.html)
+- 微信小程序 项目结构初步了解
+- 初步完成 react 快捷开发脚手架
 
-### 正则表达式
-- 待定
+### 2018-12
 
-### `npm` 仓库
+- 了解 changelog 自动生成工具(standard-version)
+- 了解 命令式提交工具 (commitizen )
+- [了解 文件和二进制数据的操作](http://javascript.ruanyifeng.com/htmlapi/file.html)
+- [了解 Web Components](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html)
+- [学习 svg 基础语法](http://javascript.ruanyifeng.com/htmlapi/svg.html)
+- [学习 node debug](http://www.ruanyifeng.com/blog/2018/03/node-debugger.html)
+- [学习 vscode debug](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 
-### `rxjs` 学习了解
+### 2018-11
 
-### `PWA` 渐进式 `web` 应用开发 
+- 学习 typeScript 相关知识
+- 学习 flow 相关知识
+- 了解 redux 管理 remach
+- 了解 vue 技术
 
-### `typeScript` 
+### 2018-10
+
+- 整理 react 技术栈体系
+- 整理 grid 布局
+- 整理个人 npm 仓库
+
+### 2018-09
+
+- 整理简历
+- 学习 typeScript 相关知识
+- 整理 react-native 常见问题 --done
+- 整理 react16 与 react15 区别 --done
+- 完善 blogs 项目
+
+  - 修复 mardown 语法错误 --done
+  - 处理设备适配问题 --done
+  - 处理代码块高亮问题 --done
+
+- 完善 react-ssr 项目结构
+
+  - 集成 ant-mobile --done
+  - 设备适配问题
+  - sever 端优化
+  - 部署问题
+
+- 整理 med 相关项目 --done

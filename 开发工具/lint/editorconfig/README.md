@@ -1,3 +1,8 @@
+## editorconfig
+
+### 安装
+
+```bash
 # http://editorconfig.org
 root = true
 
@@ -14,3 +19,6 @@ trim_trailing_whitespace = false
 
 [Makefile]
 indent_style = tab
+```
+
+### 其他
