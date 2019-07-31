@@ -7,7 +7,6 @@
 - 梳理 vue 技术栈
 - 购买服务器，备案，建站
 - 算法 letcodes
-- 整理 editorconfig
 - 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
 
 ## 日志记录
@@ -17,6 +16,7 @@
 - 整理 gitlab PR 流程
 - 整理 Code Review 规范
 - 整理 git submodel 使用
+- 整理 editorconfig
 
 ### 2019-06
 
