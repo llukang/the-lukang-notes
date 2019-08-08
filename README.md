@@ -1,4 +1,4 @@
-# 待办事宜
+# 日志进程
 
 ## 待办事宜
 
@@ -11,11 +11,14 @@
 - 完善 `react-so-cool` 项目
 - 完善 `the-front-react`
 - 整理 `create-react-app` 源码
-- 整理 `npx` 使用
-- 整理 `nvm` 使用
 - `antd` 中按需加载 `babel-plugin-import` 原理
 
 ## 日志记录
+
+### 2019-08
+
+- 整理 `npx` 使用
+- 整理 `nvm` 使用
 
 ### 2019-07
 
