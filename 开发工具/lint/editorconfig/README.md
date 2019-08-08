@@ -1,8 +1,10 @@
 # editorconfig
 
+**统一不同编辑器，文件格式问题**
+
 `EditorConfig` 用于定义编码样式,文件格式,有助于为跨越各种编辑器和 IDE ，在同一项目的多个开发人员维护一致的编码样式。
 
-`.editorconfig` 文件
+`.editorconfig`s 文件
 
 ```bash
 # 表明这是最顶层的配置文件，这样才会停止继续向上查找 .editorconfig 文件；
