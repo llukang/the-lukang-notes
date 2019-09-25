@@ -1,17 +1,38 @@
 # 日志进程
 
+职业发展方向
+
+- 工具构建方向
+- 后台运维方向
+
 ## 待办事宜
 
 - 梳理 微信公众号
 - 梳理 eletron 技术栈
 - 梳理 vue 技术栈
 - 购买服务器，备案，建站
-- 算法 letcodes
+- 算法 `letcodes`
 - 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
 - 完善 `react-so-cool` 项目
 - 完善 `the-front-react`
 - 整理 `create-react-app` 源码
 - `antd` 中按需加载 `babel-plugin-import` 原理
+- 深入学习 `nodejs`
+- 阅读 `immer` 源码
+
+## 短期目标
+
+深入学习, 服务端技术,运维技术
+
+- `node API`
+- `mysql`
+- `redis`
+- `nginx`
+- `docker`
+- 爬虫
+- 安全
+- 测试
+- 监控
 
 ## 日志记录
 
