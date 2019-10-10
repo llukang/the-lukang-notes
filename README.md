@@ -7,18 +7,17 @@
 
 ## 待办事宜
 
+- 深入 `typescript`
+- 算法 `letcodes`
+- 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
+- 深入学习 `nodejs`
+- 阅读 `immer` 源码
+- - 完善 `react-so-cool` 项目
+- 完善 `the-front-react`
+- 整理 `create-react-app` 源码
 - 梳理 微信公众号
 - 梳理 eletron 技术栈
 - 梳理 vue 技术栈
-- 购买服务器，备案，建站
-- 算法 `letcodes`
-- 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
-- 完善 `react-so-cool` 项目
-- 完善 `the-front-react`
-- 整理 `create-react-app` 源码
-- `antd` 中按需加载 `babel-plugin-import` 原理
-- 深入学习 `nodejs`
-- 阅读 `immer` 源码
 
 ## 短期目标
 
@@ -35,6 +34,16 @@
 - 监控
 
 ## 日志记录
+
+### 2019-10
+
+- `antd` 中按需加载 `babel-plugin-import` 原理
+- 手写 `promise`
+
+### 2019-09
+
+- 购买服务器，备案，建站
+- 整理 `pm2` 使用
 
 ### 2019-08
 
