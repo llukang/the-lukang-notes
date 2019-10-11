@@ -9,9 +9,9 @@
 
 - 深入 `typescript`
 - 算法 `letcodes`
+- 阅读 `immer` 源码
 - 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
 - 深入学习 `nodejs`
-- 阅读 `immer` 源码
 - - 完善 `react-so-cool` 项目
 - 完善 `the-front-react`
 - 整理 `create-react-app` 源码
