@@ -40,7 +40,7 @@ p {
 //伪类嵌套
 .box {
   &::after {
-    content: "";
+    content: '';
     clear: both;
   }
 }
@@ -162,5 +162,5 @@ $url-List: 1 2 3 4;
 
 ### 反馈与建议
 
-- 开源中国：[@刘录康](http://git.oschina.net/liulukang)
+- 开源中国：http://git.oschina.net/liulukang
 - 邮箱：<275432465@qq.com>
