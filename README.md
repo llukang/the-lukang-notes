@@ -9,7 +9,6 @@
 
 - 深入 `typescript`
 - 算法 `letcodes`
-- `grid` 布局
 - 阅读 `immer` 源码
 - 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
 - 深入学习 `nodejs`
@@ -40,6 +39,7 @@
 
 - `antd` 中按需加载 `babel-plugin-import` 原理
 - 手写 `promise`
+- `grid` 布局
 
 ### 2019-09
 
