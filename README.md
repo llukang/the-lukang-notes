@@ -7,7 +7,8 @@
 
 ## 待办事宜
 
-- 深入 `typescript`
+- 了解 `Fiber`
+- 熟悉 `typescript`
 - 算法 `letcodes`
 - 阅读 `immer` 源码
 - 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
