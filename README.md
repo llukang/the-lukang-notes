@@ -11,10 +11,12 @@
 - 熟悉 `typescript`
 - 算法 `letcodes`
 - 阅读 `immer` 源码
-- 整理 [jest 单元测试](http://www.aliued.com/?p=4095)
+- 整理 `jest` 单元测试
+
 - 深入学习 `nodejs`
-- - 完善 `react-so-cool` 项目
-- 完善 `the-front-react`
+- 完善 `the-react-compoent`
+- 完善 `react-so-cool` 项目
+
 - 整理 `create-react-app` 源码
 - 梳理 微信公众号
 - 梳理 eletron 技术栈
