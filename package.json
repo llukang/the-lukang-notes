@@ -14,6 +14,6 @@
   "author": "lukang.liu",
   "license": "ISC",
   "devDependencies": {
-    "standard-version": "^4.4.0"
+    "standard-version": "^8.0.1"
   }
 }
